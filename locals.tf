@@ -1,0 +1,9 @@
+locals{
+    name_prefix="${var.project_name}-${var.env}"
+    common_tags={
+        project_name=var.project_name
+        environment=var.env
+        creator="sumanth"
+        managed_by="Terraform"
+    }
+}
